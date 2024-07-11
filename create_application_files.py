@@ -7,7 +7,7 @@ from pdf_generator import PDF, line_height, font_family  # Importujesz klasę PD
 
 def create_application_files(application):
     base_directory = "Bewerbungsunterlagen"
-    directory_name = f"{application['id']}_{application['company'].replace(' ', '_')}_{application['position'].replace(' ', '_')}"
+    directory_name = f"{application['company'].replace(' ', '_')}_{application['position'].replace(' ', '_')}"
     full_path = os.path.join(base_directory, directory_name)
     os.makedirs(full_path, exist_ok=True) 
     
@@ -24,7 +24,7 @@ def create_application_files(application):
     pdf.set_font(font_family, '', 12)  
     pdf.ln(15)
     # Treść listu motywacyjnego
-    pdf.write(line_height, "Sehr geehrte Damen und Herren,\n\nmit großer Begeisterung bewerbe ich mich um die Position" 
+    pdf.write(line_height, "Sehr geehrte Damen und Herren,\n\nmit großer Begeisterung bewerbe ich mich um die Position " 
                          f"{application['position']} bei {application['company']}. Ich habe gerade eine zweijährige "
                          "Ausbildung im Bereich der Anwendungsentwicklung mit LAP abgeschlossen, wo ich solide Grundlagen "
                          "in der objektorientierten Programmierung mit .NET/C# erlernte. Darüber hinaus bin ich in der Lage, "
