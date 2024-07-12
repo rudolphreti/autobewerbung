@@ -1,4 +1,3 @@
-# pdf_generator.py
 from fpdf import FPDF
 
 line_height = 6
