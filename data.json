@@ -1,46 +1,50 @@
 [
     {
-        "position": "Softwareentwickler",
-        "company": "Efinio IT & ENGINEERING"
+        "position": "Software Developer",
+        "company": "OPTIMAL SYSTEMS Vertriebsgesellschaft mbH \u00d6sterreich"
     },
     {
-        "position": "Full Stack Software Developer",
-        "company": "Premedia GmbH"
+        "position": "Software Developer",
+        "company": " Pensionsversicherung"
     },
     {
-        "position": "Applied Research Engineer",
-        "company": "Unknown"
+        "position": "Initiativbewerbung",
+        "company": "COSMO CONSULT"
     },
     {
-        "position": "Full Stack Software Developer",
-        "company": "Premedia GmbH"
+        "position": "Software Developer",
+        "company": "OPTIMAL SYSTEMS"
     },
     {
-        "position": "Softwareentwickler",
-        "company": "ace Neue Informationstechnologien GmbH"
+        "position": ".NET / C# Softwaredeveloper",
+        "company": "STRABAG "
     },
     {
-        "position": "Softwaretester",
-        "company": "Hays"
+        "position": "Software Developer zur Weiterentwicklung des zentralen ERP-Systems",
+        "company": "STRABAG"
     },
     {
-        "position": "Datenreportentwickler",
-        "company": "GOURMET"
+        "position": "Junior Backend Developer",
+        "company": "STRABAG"
     },
     {
-        "position": "SAP Tester",
-        "company": "Expleo"
+        "position": "Junior Frontend Developer",
+        "company": "STRABAG"
     },
     {
-        "position": "Frontend Developer",
-        "company": "at-visions"
+        "position": "Data Analyst",
+        "company": "STRABAG"
     },
     {
-        "position": "Applikationsverantwortlicher",
-        "company": "Stadt Wien"
+        "position": "C#/.NET Developer",
+        "company": "PeopleX Software"
     },
     {
-        "position": "Tester",
-        "company": "Dupa"
+        "position": "C#/.NET Developer",
+        "company": "Undivi"
+    },
+    {
+        "position": "test",
+        "company": "test"
     }
 ]

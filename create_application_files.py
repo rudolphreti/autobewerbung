@@ -3,7 +3,7 @@ import shutil
 from datetime import datetime
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.lib.enums import TA_JUSTIFY, TA_RIGHT, TA_CENTER
 from reportlab.lib.units import cm
 
@@ -31,8 +31,8 @@ def create_application_files(application):
     elements.append(Paragraph('Mikolaj Kosmalski', styles['Header']))
     elements.append(Paragraph('Pogrelzstraße 55/6/4', styles['Header']))
     elements.append(Paragraph('1220 Wien', styles['Header']))
-    elements.append(Paragraph('<a href="mailto:mikolaj.jakub.kosmalski@gmail.com">mikolaj.jakub.kosmalski@gmail.com</a>', styles['Header']))
-    elements.append(Paragraph('<a href="https://linkedin.com/in/mikolajkosmalski">linkedin.com/in/mikolajkosmalski</a>', styles['Header']))
+    elements.append(Paragraph('<a href="mailto:mikolaj.jakub.kosmalski@gmail.com" color="blue"><u>mikolaj.jakub.kosmalski@gmail.com</u></a>', styles['Header']))
+    elements.append(Paragraph('<a href="https://linkedin.com/in/mikolajkosmalski" color="blue"><u>linkedin.com/in/mikolajkosmalski</u></a>', styles['Header']))
     elements.append(Paragraph('0660 20 57 157', styles['Header']))
     elements.append(Spacer(1, 20))
     elements.append(Paragraph('An:', styles['Header']))
@@ -40,21 +40,30 @@ def create_application_files(application):
     elements.append(Spacer(1, 20))
     elements.append(Paragraph(f'Wien, {datetime.now().strftime("%d.%m.%Y")}', styles['AlignRight']))
     elements.append(Spacer(1, 40))
-    elements.append(Paragraph(f'<b>Bewerbung als {application["position"]}</b>', styles['AlignCenterTitle']))
+    if application["position"] == "Initiativbewerbung":
+        elements.append(Paragraph(f'<b>{application["position"]}</b>', styles['AlignCenterTitle']))
+    else:
+        elements.append(Paragraph(f'<b>Bewerbung als {application["position"]}</b>', styles['AlignCenterTitle']))
     elements.append(Spacer(1, 40)) 
+    
+    position = application['position']
+    company = application['company']
+
+    if position == "Initiativbewerbung":
+        text = f"bei {company}. "
+    else:
+        text = f"um die Position {position} bei {company}. "
     
     content = (
         "Sehr geehrte Damen und Herren,<br/><br/>"
-        f"mit großer Begeisterung bewerbe ich mich um die Position {application['position']} bei {application['company']}. "
+        f"mit großer Begeisterung bewerbe ich mich {text}"
         "Ich habe gerade eine zweijährige Ausbildung im Bereich der Anwendungsentwicklung mit LAP abgeschlossen, wo ich solide Grundlagen "
         "in der objektorientierten Programmierung mit .NET/C# erlernte. Darüber hinaus bin ich in der Lage, Webanwendungen in ASP.NET zu entwickeln, "
         "wobei ich SQL-Datenbanken effektiv nutze.<br/><br/>"
         "Seit 2020 war ich bis 2023 als Mitbegründer im Startup "
         '<a href="https://timagio.com" color="blue"><u>timagio.com</u></a>, '
         "das sich auf pädagogische Hilfsmittel für den polnischsprachigen Leseunterricht spezialisiert. Dort habe ich mehrere Prototypen in JavaScript, "
-        "Automatisierungen in Python und Powershell-Skripte entwickelt.<br/><br/>"
-        "Ich habe Erfahrung mit Azure DevOps, Git, Chat GPT und Github Copilot gesammelt. Den Einsatz von KI-Lösungen sehe ich als unverzichtbar für die "
-        "moderne Softwareentwicklung und meine berufliche Weiterbildung an.<br/><br/>"
+        "Automatisierungen in Python und Powershell-Skripte entwickelt und Erfahrung mit Azure DevOps, Git, Chat GPT und Github Copilot gesammelt.<br/><br/>"
         "Mit meiner Erfahrung und meinem Engagement für innovative Lösungen im IT-Bereich bin ich überzeugt, dass ich einen wertvollen Beitrag zu Ihrem Team "
         "leisten kann. Ich freue mich darauf, in einem persönlichen Gespräch mehr über diese Position zu erfahren.<br/><br/>"
         "Um meine Einarbeitung zu erleichtern, bin ich gerne bereit ein Praktikum zu absolvieren. Sie könnten profitieren von einer Eingliederungsbeihilfe: <br/>"
