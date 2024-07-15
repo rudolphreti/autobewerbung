@@ -1,50 +1,66 @@
 [
     {
-        "position": "Software Developer",
-        "company": "OPTIMAL SYSTEMS Vertriebsgesellschaft mbH \u00d6sterreich"
+        "position": "Data Engineer Data Warehouse Junior",
+        "company": "BAWAG P.S.K."
     },
     {
-        "position": "Software Developer",
-        "company": " Pensionsversicherung"
+        "position": "Junior Security Consultant",
+        "company": "WienIT"
+    },
+    {
+        "position": "Junior Data Engineer",
+        "company": "solvistas GmbH"
+    },
+    {
+        "position": "Junior Software Developer ERP Project",
+        "company": "proALPHA Software Austria GmbH"
+    },
+    {
+        "position": "Junior Data Engineer",
+        "company": "IMMOFINANZ AG"
+    },
+    {
+        "position": "IKT Junior Engineer",
+        "company": "NTT America Solutions, Inc."
+    },
+    {
+        "position": "Data Architect Junior",
+        "company": "AGES"
+    },
+    {
+        "position": "Junior Microsoft Dynamics CRM Cloud Developer",
+        "company": "smartpoint dataformers GmbH"
+    },
+    {
+        "position": "Junior Cybersecurity Engineer",
+        "company": "Siemens AG \u00d6sterreich"
+    },
+    {
+        "position": "Junior Hardware Engineer",
+        "company": "RIEDEL Communications GmbH & Co. KG"
+    },
+    {
+        "position": " Junior IT Coordinator",
+        "company": "Helvetia Versicherungen AG"
+    },
+    {
+        "position": "Junior IT Auditor",
+        "company": "Oesterreichische Nationalbank"
     },
     {
         "position": "Initiativbewerbung",
-        "company": "COSMO CONSULT"
+        "company": "WIENER STADTWERKE GmbH"
     },
     {
-        "position": "Software Developer",
-        "company": "OPTIMAL SYSTEMS"
+        "position": "Trainee Data Excellence",
+        "company": "WIENER STADTWERKE GmbH"
     },
     {
-        "position": ".NET / C# Softwaredeveloper",
-        "company": "STRABAG "
+        "position": "Initiativbewerbung",
+        "company": "MA 01 - Wien Digital"
     },
     {
-        "position": "Software Developer zur Weiterentwicklung des zentralen ERP-Systems",
-        "company": "STRABAG"
-    },
-    {
-        "position": "Junior Backend Developer",
-        "company": "STRABAG"
-    },
-    {
-        "position": "Junior Frontend Developer",
-        "company": "STRABAG"
-    },
-    {
-        "position": "Data Analyst",
-        "company": "STRABAG"
-    },
-    {
-        "position": "C#/.NET Developer",
-        "company": "PeopleX Software"
-    },
-    {
-        "position": "C#/.NET Developer",
-        "company": "Undivi"
-    },
-    {
-        "position": "test",
-        "company": "test"
+        "position": "Initiativbewerbung",
+        "company": "MA 01 - Wien Digital"
     }
 ]

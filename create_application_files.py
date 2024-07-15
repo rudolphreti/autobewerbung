@@ -15,7 +15,7 @@ def create_application_files(application):
     full_path = os.path.join(base_directory, directory_name)
     os.makedirs(full_path, exist_ok=True) 
 
-    pdf_file_path = os.path.join(full_path, f"Bewerbungsschreiben_Mikolaj_Kosmalski_{application['company']}.pdf")
+    pdf_file_path = os.path.join(full_path, f"Bewerbungsschreiben_Mikolaj_Kosmalski.pdf")
     doc = SimpleDocTemplate(pdf_file_path, pagesize=A4,
                             rightMargin=1*cm, leftMargin=1*cm,
                             topMargin=1*cm, bottomMargin=1*cm)
@@ -77,10 +77,10 @@ def create_application_files(application):
     doc.build(elements)
     
     # Copy additional files
-    cv_zeugnis_destination = os.path.join(full_path, f"CV_Zeugniss_Mikolaj_Kosmalski_{application['company']}.pdf")
+    cv_zeugnis_destination = os.path.join(full_path, f"CV_Zeugniss_Mikolaj_Kosmalski.pdf")
     shutil.copy('CV_Zeugniss.pdf', cv_zeugnis_destination)
     
-    profilphoto_destination = os.path.join(full_path, f"profilfoto_Mikolaj_Kosmalski_{application['company']}.jpg")
+    profilphoto_destination = os.path.join(full_path, f"profilfoto_Mikolaj_Kosmalski.jpg")
     shutil.copy('profilfoto.jpg', profilphoto_destination)
 
     # Create a directory for separated CV and LAP-Zeugnis files if it doesn't exist
@@ -89,12 +89,12 @@ def create_application_files(application):
 
     # Copy the CV.pdf into the created directory CV_LAP_separated
     cv_source = 'CV.pdf'
-    cv_destination = os.path.join(cv_lap_separated_path, f"CV_Mikolaj_Kosmalski_{application['company']}.pdf")
+    cv_destination = os.path.join(cv_lap_separated_path, f"CV_Mikolaj_Kosmalski.pdf")
     shutil.copy(cv_source, cv_destination)
 
     # Copy the LAP-Zeugnis.pdf into the created directory CV_LAP_separated
     zeugnis_source = 'LAP-Zeugnis.pdf'
-    zeugnis_destination = os.path.join(cv_lap_separated_path, f"LAP-Zeugnis_Mikolaj_Kosmalski_{application['company']}.pdf")
+    zeugnis_destination = os.path.join(cv_lap_separated_path, f"LAP-Zeugnis_Mikolaj_Kosmalski.pdf")
     shutil.copy(zeugnis_source, zeugnis_destination)
 
 
