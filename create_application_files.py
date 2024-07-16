@@ -1,5 +1,6 @@
 import os
 import shutil
+import sys
 from datetime import datetime
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -7,10 +8,14 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.lib.enums import TA_JUSTIFY, TA_RIGHT, TA_CENTER
 from reportlab.lib.units import cm
 
+def get_absolute_path(file_name):
+    # Get the absolute path of the current directory (support for PyInstaller)
+    current_dir = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(current_dir, file_name)
 
 # Define the PDF generator function
 def create_application_files(application):
-    base_directory = "Bewerbungsunterlagen"
+    base_directory = get_absolute_path("Bewerbungsunterlagen")
     directory_name = f"{application['company'].replace(' ', '_')}_{application['position'].replace(' ', '_')}"
     full_path = os.path.join(base_directory, directory_name)
     os.makedirs(full_path, exist_ok=True) 
@@ -77,23 +82,26 @@ def create_application_files(application):
     doc.build(elements)
     
     # Copy additional files
-    cv_zeugnis_destination = os.path.join(full_path, f"CV_Zeugniss_Mikolaj_Kosmalski.pdf")
-    shutil.copy('CV_Zeugniss.pdf', cv_zeugnis_destination)
+    # get_absolute_path
+    cv_zeugnis_source = get_absolute_path('CV_Zeugnis.pdf')
+    cv_zeugnis_destination = os.path.join(full_path, f"CV_Zeugnis_Mikolaj_Kosmalski.pdf")
+    shutil.copy(cv_zeugnis_source, cv_zeugnis_destination)
     
+    profilphoto_source = get_absolute_path('profilfoto.jpg')
     profilphoto_destination = os.path.join(full_path, f"profilfoto_Mikolaj_Kosmalski.jpg")
-    shutil.copy('profilfoto.jpg', profilphoto_destination)
+    shutil.copy(profilphoto_source, profilphoto_destination)
 
     # Create a directory for separated CV and LAP-Zeugnis files if it doesn't exist
     cv_lap_separated_path = os.path.join(full_path, "CV_LAP_separated")
     os.makedirs(cv_lap_separated_path, exist_ok=True)
 
     # Copy the CV.pdf into the created directory CV_LAP_separated
-    cv_source = 'CV.pdf'
+    cv_source = get_absolute_path('CV.pdf')
     cv_destination = os.path.join(cv_lap_separated_path, f"CV_Mikolaj_Kosmalski.pdf")
     shutil.copy(cv_source, cv_destination)
 
     # Copy the LAP-Zeugnis.pdf into the created directory CV_LAP_separated
-    zeugnis_source = 'LAP-Zeugnis.pdf'
+    zeugnis_source = get_absolute_path('LAP-Zeugnis.pdf')
     zeugnis_destination = os.path.join(cv_lap_separated_path, f"LAP-Zeugnis_Mikolaj_Kosmalski.pdf")
     shutil.copy(zeugnis_source, zeugnis_destination)
 
