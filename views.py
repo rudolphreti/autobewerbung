@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request, redirect, url_for, flash
 import pandas as pd
 from forms import JobApplicationForm
 from data_manager import load_data, save_data
@@ -18,4 +18,14 @@ def index():
         return redirect(url_for('index'))
     df = pd.DataFrame(job_applications)
     table_html = df.to_html(classes='table table-striped', index=False)
-    return render_template('index.html', table=table_html, form=form)
+    return render_template('index.html', table=table_html, form=form, job_applications=job_applications)
+
+def delete_application(index):
+    job_applications = load_data()
+    try:
+        del job_applications[index]
+        save_data(job_applications)
+        flash('Application deleted successfully!', 'success')
+    except IndexError:
+        flash('Invalid application index!', 'danger')
+    return redirect(url_for('index'))

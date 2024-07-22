@@ -1,66 +1,214 @@
 [
     {
-        "position": "Data Engineer Data Warehouse Junior",
-        "company": "BAWAG P.S.K."
+        "position": "Salesforce Developer",
+        "company": "Evol.X - Customer Experience"
     },
     {
-        "position": "Junior Security Consultant",
-        "company": "WienIT"
+        "position": "Junior Softwarebetreuer",
+        "company": "HOFER \u00d6sterreich"
     },
     {
-        "position": "Junior Data Engineer",
-        "company": "solvistas GmbH"
+        "position": "Microsoft Dynamics Business Central Developer/Consultant",
+        "company": "Business Data Solutions GmbH"
     },
     {
-        "position": "Junior Software Developer ERP Project",
-        "company": "proALPHA Software Austria GmbH"
+        "position": "Hochsprachen Entwickler",
+        "company": "MECHATRONIK AUSTRIA"
     },
     {
-        "position": "Junior Data Engineer",
-        "company": "IMMOFINANZ AG"
+        "position": "Full Stack Tester",
+        "company": "Expleo Group"
     },
     {
-        "position": "IKT Junior Engineer",
-        "company": "NTT America Solutions, Inc."
+        "position": ".Net Developer",
+        "company": "Avanade"
     },
     {
-        "position": "Data Architect Junior",
-        "company": "AGES"
+        "position": "Full Stack / Web Developer",
+        "company": "EV Group"
     },
     {
-        "position": "Junior Microsoft Dynamics CRM Cloud Developer",
-        "company": "smartpoint dataformers GmbH"
+        "position": "Fullstack Software Developer C# / .NET",
+        "company": "Hays"
     },
     {
-        "position": "Junior Cybersecurity Engineer",
-        "company": "Siemens AG \u00d6sterreich"
+        "position": "(Junior) Softwareentwickler ERP-Projekte",
+        "company": "proALPHA"
     },
     {
-        "position": "Junior Hardware Engineer",
-        "company": "RIEDEL Communications GmbH & Co. KG"
+        "position": "Full Stack Developer",
+        "company": "EV Group"
     },
     {
-        "position": " Junior IT Coordinator",
-        "company": "Helvetia Versicherungen AG"
+        "position": "Software Developer",
+        "company": "Fabasoft"
     },
     {
-        "position": "Junior IT Auditor",
-        "company": "Oesterreichische Nationalbank"
+        "position": "IT Support Engineer",
+        "company": "Porsche Holding"
+    },
+    {
+        "position": "Junior Anwendungssupport f\u00fcr BMD NTCS",
+        "company": "TPA Austria"
+    },
+    {
+        "position": "Softwareentwickler",
+        "company": "Efinio IT & Engineering"
+    },
+    {
+        "position": "Software-Developer Microsoft C#, .net",
+        "company": "EBCONT"
+    },
+    {
+        "position": "Web Developer (all genders) [Graz]",
+        "company": "adesso Austria GmbH"
+    },
+    {
+        "position": "Client Stack Developer",
+        "company": "Kontron Transportation"
+    },
+    {
+        "position": "Softwareentwickler C# / .NET / Microsoft-Technologien, MS SQL, Oracle",
+        "company": "Vesterling AG"
+    },
+    {
+        "position": "Software Tester",
+        "company": "Austrian Federal Computing Centre"
+    },
+    {
+        "position": "Accountant",
+        "company": "Atomic"
+    },
+    {
+        "position": "Software Engineer",
+        "company": "valantic Austria"
+    },
+    {
+        "position": "C# Entwickler",
+        "company": "HR-SCOPE SCHEIBER PROFESSIONAL STAFFING GMBH"
+    },
+    {
+        "position": "Full Stack Developer",
+        "company": "Wiener Lokalbahnen"
+    },
+    {
+        "position": "ICT (Junior) Engineer",
+        "company": "NTT DATA, Inc."
+    },
+    {
+        "position": ".NET Software Engineer, C#, WPF - Asset Management",
+        "company": "Noir"
+    },
+    {
+        "position": "System Developer",
+        "company": "ALD Automotive"
+    },
+    {
+        "position": "Software-Tester f\u00fcr Web \u2013 und Windowsanwendungen",
+        "company": "PKE Holding AG"
+    },
+    {
+        "position": "Junior IT Engineer",
+        "company": "Global Technology Solutions Ltd."
+    },
+    {
+        "position": "IT Application Engineer",
+        "company": "XXXLdigital \u2013 Part of XXXL Group"
+    },
+    {
+        "position": "Junior Analyst / Entwickler f\u00fcr ESG-Data Solutions",
+        "company": "Raiffeisen Bank International AG"
+    },
+    {
+        "position": "Full Stack Engineer",
+        "company": "Storm4"
+    },
+    {
+        "position": "Junior Cybersecurity Specialist",
+        "company": "Siemens"
+    },
+    {
+        "position": "IT-Administrator",
+        "company": "MAK - Museum f\u00fcr angewandte Kunst"
+    },
+    {
+        "position": "Softwareentwickler C#/.NET",
+        "company": "DIS AG"
+    },
+    {
+        "position": "(Junior) Consultant",
+        "company": "Deloitte"
+    },
+    {
+        "position": "Frontend Developer",
+        "company": "at-visions"
+    },
+    {
+        "position": "SAP Tester",
+        "company": " Expleo Group"
+    },
+    {
+        "position": "Supporter and Software Consultant ",
+        "company": "Planet"
+    },
+    {
+        "position": "SAP Developer",
+        "company": "Wavestone"
+    },
+    {
+        "position": "Games Operations Engineer ",
+        "company": "Greentube GmbH"
+    },
+    {
+        "position": "Information Technology Generalist",
+        "company": "DenizBank AG"
+    },
+    {
+        "position": "ERP Software Developer",
+        "company": "XXXLdigital \u2013 Part of XXXL Group"
+    },
+    {
+        "position": "Junior Cybersecurity Consultant",
+        "company": "Accenture DACH"
+    },
+    {
+        "position": "Mitarbeiter junior Anforderungsmanagement",
+        "company": "Raiffeisenlandesbank Burgenland und Revisionsverband eGen"
     },
     {
         "position": "Initiativbewerbung",
-        "company": "WIENER STADTWERKE GmbH"
+        "company": "UNIQA Insurance Group"
     },
     {
-        "position": "Trainee Data Excellence",
-        "company": "WIENER STADTWERKE GmbH"
+        "position": "Junior Consultant",
+        "company": "BSH advisors "
     },
     {
-        "position": "Initiativbewerbung",
-        "company": "MA 01 - Wien Digital"
+        "position": "UI Path Automation Engineer (Test Automation/RPA) - Eviden",
+        "company": "Eviden"
     },
     {
-        "position": "Initiativbewerbung",
-        "company": "MA 01 - Wien Digital"
+        "position": "(Junior-) Consultant Security & Privacy",
+        "company": "WienIT GmbH"
+    },
+    {
+        "position": "IT-Software Architekt",
+        "company": "W\u00fcstenrot Gruppe"
+    },
+    {
+        "position": "Junior Software Developer",
+        "company": "Wiener Linien"
+    },
+    {
+        "position": "IT-Consultant - Digitalisierung",
+        "company": "Devoteam Austria"
+    },
+    {
+        "position": "Softwareentwickler",
+        "company": "EV Group"
+    },
+    {
+        "position": "Developer Microsoft Dynamics 365",
+        "company": "Wien Energie GmbH"
     }
 ]

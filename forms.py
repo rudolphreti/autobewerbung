@@ -1,5 +1,7 @@
-from wtforms import Form, StringField, validators
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
 
-class JobApplicationForm(Form):
-    position = StringField('Position', [validators.DataRequired()])
-    company = StringField('Company', [validators.DataRequired()])
+class JobApplicationForm(FlaskForm):
+    company = StringField('Company')
+    position = StringField('Position')
+    submit = SubmitField('Add Application')
