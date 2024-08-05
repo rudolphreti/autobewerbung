@@ -63,7 +63,7 @@ def create_application_files(application):
         "Sehr geehrte Damen und Herren,<br/><br/>"
         f"mit großer Begeisterung bewerbe ich mich {text}"
         "Ich habe gerade eine zweijährige Ausbildung im Bereich der Anwendungsentwicklung mit LAP abgeschlossen, wo ich solide Grundlagen "
-        "in der objektorientierten Programmierung mit .NET/C# erlernte. Darüber hinaus bin ich in der Lage, Webanwendungen in ASP.NET zu entwickeln, "
+        "in der objektorientierten Programmierung mit .NET/C# erlernte. Darüber hinaus bin ich in der Lage, Webanwendungen in ASP.NET mit REST API zu entwickeln, "
         "wobei ich SQL-Datenbanken effektiv nutze.<br/><br/>"
         "Seit 2020 war ich bis 2023 als Mitbegründer im Startup "
         '<a href="https://timagio.com" color="blue"><u>timagio.com</u></a>, '
