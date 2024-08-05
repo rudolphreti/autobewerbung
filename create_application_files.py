@@ -68,7 +68,7 @@ def create_application_files(application):
         "Seit 2020 war ich bis 2023 als Mitbegründer im Startup "
         '<a href="https://timagio.com" color="blue"><u>timagio.com</u></a>, '
         "das sich auf pädagogische Hilfsmittel für den polnischsprachigen Leseunterricht spezialisiert. Dort habe ich mehrere Prototypen in JavaScript, "
-        "Automatisierungen in Python und Powershell-Skripte entwickelt und Erfahrung mit Azure DevOps, Git, Chat GPT und Github Copilot gesammelt.<br/><br/>"
+        "Automatisierungen in Python und Powershell-Skripte entwickelt sowie Erfahrung mit Azure DevOps und Git gesammelt.<br/><br/>"
         "Mit meiner Erfahrung und meinem Engagement für innovative Lösungen im IT-Bereich bin ich überzeugt, dass ich einen wertvollen Beitrag zu Ihrem Team "
         "leisten kann. Ich freue mich darauf, in einem persönlichen Gespräch mehr über diese Position zu erfahren.<br/><br/>"
         "Um meine Einarbeitung zu erleichtern, bin ich gerne bereit ein Praktikum zu absolvieren. Sie könnten profitieren von einer Eingliederungsbeihilfe: <br/>"
