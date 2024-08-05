@@ -29,6 +29,10 @@
           <div class="form-group">
             {{ form.position.label }} {{ form.position(class="form-control") }}
           </div>
+          <div class="form-group">
+            {{ form.URL.label }} {{ form.URL(class="form-control") }}
+            <!-- URL Feld hinzugefügt -->
+          </div>
           <button type="submit" class="btn btn-primary">Add Application</button>
         </form>
       </div>
@@ -50,6 +54,7 @@
               >
                 Position <i class="fas fa-sort"></i>
               </th>
+              <th>URL</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -58,6 +63,13 @@
             <tr>
               <td>{{ application.company }}</td>
               <td>{{ application.position }}</td>
+              <td>
+                <a
+                  href="{{ application.URL }}"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Visit</a
+                >
               <td>
                 <form
                   method="POST"

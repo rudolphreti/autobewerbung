@@ -10,7 +10,8 @@ def index():
     if request.method == 'POST' and form.validate():
         new_application = {
             "position": form.position.data,
-            "company": form.company.data
+            "company": form.company.data,
+            "URL": form.URL.data 
         }
         job_applications.append(new_application)
         save_data(job_applications)

@@ -14,6 +14,8 @@ csrf = CSRFProtect(app)  # CSRF-Schutz aktivieren
 
 app.add_url_rule('/', view_func=index, methods=['GET', 'POST'])
 app.add_url_rule('/delete/<int:index>', 'delete_application', delete_application, methods=['POST'])
+app.add_url_rule('/', view_func=index, methods=['GET', 'POST'])
+
 
 # Argument parsing
 parser = argparse.ArgumentParser()
