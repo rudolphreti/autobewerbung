@@ -65,9 +65,9 @@ def create_application_files(application):
         "Ich habe gerade eine zweijährige Ausbildung im Bereich der Anwendungsentwicklung mit LAP abgeschlossen, wo ich solide Grundlagen "
         "in der objektorientierten Programmierung mit .NET/C# erlernte. Darüber hinaus bin ich in der Lage, Webanwendungen in ASP.NET mit REST API zu entwickeln, "
         "wobei ich SQL-Datenbanken effektiv nutze.<br/><br/>"
-        "Seit 2020 war ich bis 2023 als Mitbegründer im Startup "
+        "Von 2020 bis 2023 war ich Mitbegründer des Start-ups "
         '<a href="https://timagio.com" color="blue"><u>timagio.com</u></a>, '
-        "das sich auf pädagogische Hilfsmittel für den polnischsprachigen Leseunterricht spezialisiert. Dort habe ich mehrere Prototypen in JavaScript, "
+        "das Apps für Eltern und Lehrer im Zusammenhang mit der Montessori-Pädagogik entwickelt. Dort habe ich mehrere Prototypen in JavaScript, "
         "Automatisierungen in Python und Powershell-Skripte entwickelt sowie Erfahrung mit Azure DevOps und Git gesammelt.<br/><br/>"
         "Mit meiner Erfahrung und meinem Engagement für innovative Lösungen im IT-Bereich bin ich überzeugt, dass ich einen wertvollen Beitrag zu Ihrem Team "
         "leisten kann. Ich freue mich darauf, in einem persönlichen Gespräch mehr über diese Position zu erfahren.<br/><br/>"
