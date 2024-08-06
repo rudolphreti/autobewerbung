@@ -62,18 +62,16 @@ def create_application_files(application):
     content = (
         "Sehr geehrte Damen und Herren,<br/><br/>"
         f"mit großer Begeisterung bewerbe ich mich {text}"
-        "Ich habe gerade eine zweijährige Ausbildung im Bereich der Anwendungsentwicklung mit LAP abgeschlossen, wo ich solide Grundlagen "
-        "in der objektorientierten Programmierung mit .NET/C# erlernte. Darüber hinaus bin ich in der Lage, Webanwendungen in ASP.NET mit REST API zu entwickeln, "
-        "wobei ich SQL-Datenbanken effektiv nutze.<br/><br/>"
-        "Von 2020 bis 2023 war ich Mitbegründer des Start-ups "
-        '<a href="https://timagio.com" color="blue"><u>timagio.com</u></a>, '
-        "das Apps für Eltern und Lehrer im Zusammenhang mit der Montessori-Pädagogik entwickelt. Dort habe ich mehrere Prototypen in JavaScript, "
-        "Automatisierungen in Python und Powershell-Skripte entwickelt sowie Erfahrung mit Azure DevOps und Git gesammelt.<br/><br/>"
-        "Mit meiner Erfahrung und meinem Engagement für innovative Lösungen im IT-Bereich bin ich überzeugt, dass ich einen wertvollen Beitrag zu Ihrem Team "
-        "leisten kann. Ich freue mich darauf, in einem persönlichen Gespräch mehr über diese Position zu erfahren.<br/><br/>"
-        "Um meine Einarbeitung zu erleichtern, bin ich gerne bereit ein Praktikum zu absolvieren. Sie könnten profitieren von einer Eingliederungsbeihilfe: <br/>"
-        '<a href="https://ams.at/unternehmen/service-zur-personalsuche/foerderungen/eingliederungsbeihilfe" color="blue"><u>ams.at/unternehmen/service-zur-personalsuche/foerderungen/eingliederungsbeihilfe</u></a>.<br/><br/>'
+        "Ich habe gerade eine zweijährige Ausbildung im Bereich der Anwendungsentwicklung mit LAP abgeschlossen, wo ich solide Grundlagen in der objektorientierten Programmierung mit .NET/C# erlernte. Darüber hinaus bin ich in der Lage, Webanwendungen in ASP.NET mit REST API zu entwickeln, wobei ich SQL-Datenbanken effektiv nutze.<br/><br/>"
+        
+        "Von 2020 bis 2023 war ich Mitbegründer des Start-ups " '<a href="https://timagio.com" color="blue"><u>timagio.com</u></a>, '"das Apps für Eltern und Lehrer im Zusammenhang mit der Montessori-Pädagogik entwickelt. Dort habe ich mehrere Prototypen in JavaScript, Automatisierungen in Python und Powershell-Skripte entwickelt sowie Erfahrung mit Azure DevOps und Git gesammelt.<br/><br/>"
+        
+        "Ich lerne schnell, habe einen analytischen Verstand, bin kreativ, offen für Kritik und resistent gegen Stress. Ich bin daher überzeugt, dass ich ein wertvolles Mitglied Ihres Teams sein kann. Ich freue mich darauf, in einem persönlichen Gespräch mehr über diese Position zu erfahren.<br/><br/>"
+        
+        "Um meine Einarbeitung zu erleichtern, bin ich gerne bereit ein Praktikum zu absolvieren. Sie könnten profitieren von einer Eingliederungsbeihilfe: <br/>"'<a href="https://ams.at/unternehmen/service-zur-personalsuche/foerderungen/eingliederungsbeihilfe" color="blue"><u>ams.at/unternehmen/service-zur-personalsuche/foerderungen/eingliederungsbeihilfe</u></a>.<br/><br/>'
+        
         "Ich füge diesem Schreiben meinen Lebenslauf und meine LAP-Zeugnis bei.<br/><br/>"
+        
         "Mit freundlichen Grüßen<br/>Mikolaj Kosmalski"
     )
 
