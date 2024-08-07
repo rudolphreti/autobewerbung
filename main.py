@@ -3,18 +3,21 @@ import argparse
 from flask import Flask
 from flask_wtf import CSRFProtect
 import webbrowser
-from views import index, delete_application
+from views import index, delete_application, update_field, main_bp
 from data_manager import load_data, clear_data
 from create_application_files import create_application_files
 from folder_manager import delete_folder_contents
 
+
 app = Flask(__name__)
 app.secret_key = 'secret'
 csrf = CSRFProtect(app)  # CSRF-Schutz aktivieren
+app.register_blueprint(main_bp)
+
 
 app.add_url_rule('/', view_func=index, methods=['GET', 'POST'])
 app.add_url_rule('/delete/<int:index>', 'delete_application', delete_application, methods=['POST'])
-app.add_url_rule('/', view_func=index, methods=['GET', 'POST'])
+app.add_url_rule('/update_field', 'update_field', update_field, methods=['POST'])
 
 
 # Argument parsing

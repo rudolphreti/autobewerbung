@@ -1,1 +1,5 @@
 Bewerbungsunterlagen/
+
+__pycache__/
+*.py[cod]
+

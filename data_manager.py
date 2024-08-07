@@ -9,7 +9,7 @@ def get_data_file_path():
 
 def load_data():
     data_file_path = get_data_file_path()
-    with open(data_file_path, 'r') as file:
+    with open(data_file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
 def save_data(data):
@@ -23,5 +23,3 @@ def clear_data():
     # Open the data file in write mode and empty its contents to an empty list
     with open(data_file_path, 'w') as file:
         json.dump([], file, indent=4)
-
-

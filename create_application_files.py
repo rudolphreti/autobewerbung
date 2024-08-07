@@ -8,6 +8,10 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.lib.enums import TA_JUSTIFY, TA_RIGHT, TA_CENTER
 from reportlab.lib.units import cm
 
+def sanitize_directory_name(name):
+    # Zamień nieprawidłowe znaki na znaki podkreślenia lub inne bezpieczne znaki
+    return name.replace('/', '_').replace('|', '_').replace(':', '_').replace('?', '_').replace('<', '_').replace('>', '_').replace('*', '_').replace('\\', '_')
+
 def get_absolute_path(file_name):
     # Get the absolute path of the current directory (support for PyInstaller)
     current_dir = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
@@ -16,7 +20,10 @@ def get_absolute_path(file_name):
 # Define the PDF generator function
 def create_application_files(application):
     base_directory = get_absolute_path("Bewerbungsunterlagen")
-    directory_name = f"{application['company'].replace(' ', '_')}_{application['position'].replace(' ', '_')}"
+    company_name = sanitize_directory_name(application['company'].replace(' ', '_'))
+    position_name = sanitize_directory_name(application['position'].replace(' ', '_'))
+    directory_name = f"{company_name}_{position_name}"
+    
     full_path = os.path.join(base_directory, directory_name)
     os.makedirs(full_path, exist_ok=True) 
 
