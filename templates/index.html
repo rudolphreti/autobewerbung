@@ -15,14 +15,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
   </head>
   <body>
     <div class="container">
+      <div class="sticky-top bg-light py-2">
+        <form action="{{ url_for('regenerate_bp.regenerate_applications') }}" method="post" style="display:inline;">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+            <button type="submit" class="btn btn-warning">Unterlagen erneut generieren</button>
+        </form>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="btn btn-primary">Zu Gmail</a>
+    </div>
       <h1 class="mt-5">Job Applications</h1>
       <p></p>
       <div class="mt-3">
-        {{ form.csrf_token }}
         <form method="POST">
           {{ form.hidden_tag() }}
           <div class="form-group">
@@ -43,22 +49,21 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th
+              <th class="col-3"
                 id="positionHeader"
                 onclick="sortTable('position')"
                 style="cursor: pointer"
               >
                 Position <i class="fas fa-sort"></i>
               </th>
-              <th
+              <th class="col-6"
                 id="companyHeader"
                 onclick="sortTable('company')"
                 style="cursor: pointer"
               >
                 Company <i class="fas fa-sort"></i>
               </th>
-              <th>URL</th>
-              <th>Actions</th>
+              <th class="col-3">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -82,16 +87,19 @@
                   onchange="updateField('{{ loop.index0 }}', 'position', this.value)"
                 />
               </td>
-              <td>
+              
+
+              <td class="d-flex justify-content-start">
                 <a
                   href="{{ application.URL }}"
                   target="_blank"
-                  class="btn btn-primary"
+                  class="btn btn-primary btn-sm"
                   >Visit</a
                 >
-              </td>
-
-              <td>
+                
+                <button type="button" class="btn btn-success btn-sm" onclick="copyMessage('{{ application.URL}}')">Message</button>
+                <!-- button Folder to call a function goToFolder to go to Bewerbungsunterlagen in hard drive folder() -->
+                <button type="button" class="btn btn-info btn-sm" onclick="goToFolder('{{ folderPath}}')">Folder</button>
                 <form
                   method="POST"
                   action="{{ url_for('delete_application', index=loop.index0) }}"
@@ -101,7 +109,7 @@
                     name="csrf_token"
                     value="{{ csrf_token() }}"
                   />
-                  <button type="submit" class="btn btn-danger">Delete</button>
+                  <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                 </form>
               </td>
             </tr>
@@ -111,7 +119,17 @@
       </div>
     </div>
     <script src="{{ url_for('static', filename='js/sortTable.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/updateField.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/updateField.js') }}"></script>
+    <script>
+      function copyMessage(url) {
+        const message = `Sehr geehrte Damen und Herren,\n\nals Antwort auf die Anzeige ${url} sende ich Ihnen meine Bewerbungsunterlagen.\n\nMit freundlichen Grüßen,\nMikołaj Kosmalski`;
+        navigator.clipboard.writeText(message);
+      }
 
+      //go to folder TODO
+      function goToFolder(folderPath) {
+        window.location.href = folderPath;
+      }
+    </script>
   </body>
 </html>

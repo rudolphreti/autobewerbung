@@ -1,100 +1,5 @@
 [
     {
-        "URL": "https://www.xing.com//jobs/wien-softwareentwickler-berater-net-mobile-xamarin-net-xamarin-mvvm-wpf-inhouse-mwd-123303772",
-        "position": "Softwareentwickler / Berater C# / .NET mobile/Xamarin | C#, .NET, Xamarin, MVVM, WPF | Inhouse",
-        "company": "Vesterling AG"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-softwareentwickler-net-sql-expert-teilzeit-30-std-woche-123302946",
-        "position": "Softwareentwickler C# .NET / SQL Expert  - Teilzeit ab 30.Std/Woche",
-        "company": "Bechtle Austria GmbH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-net-developer-wien-oesb-gruppe-management-gmbh-wien-vollzeit-2-monaten-ago-123192998",
-        "position": "C#/.NET Developer \u2013  (Wien) \u00d6SB Gruppe Management GmbH Wien Wien Vollzeit 2 Monaten ago",
-        "company": "\u00d6SB Gruppe Management GmbH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-senior-net-developer-122581985",
-        "position": "Senior .NET Developer",
-        "company": "RUBICON IT GmbH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-net-senior-developer-122455475",
-        "position": ".NET Senior Developer",
-        "company": "TechTalk"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-senior-code-module-net-engineer-discovering-workings-net-122349240",
-        "position": "Senior Code Module (.NET) Engineer : discovering the inner workings of .NET!",
-        "company": "Dynatrace"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-net-senior-developer-122188106",
-        "position": ".NET Senior Developer",
-        "company": "TechTalk GmbH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-telefonanlagen-service-techniker-120960911",
-        "position": "Telefonanlagen Service-Techniker",
-        "company": "net-sol GmbH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-vollzeit-system-engineer-administrator-120964092",
-        "position": "VOLLZEIT SYSTEM ENGINEER/ADMINISTRATOR",
-        "company": "net-sol GmbH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-senior-software-developer-net-120947661",
-        "position": "(Senior) Software-Developer .NET",
-        "company": "Auftragnehmerkataster \u00d6sterreich"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-software-developer-microsoft-net-120942036",
-        "position": "Software-Developer Microsoft C#, .net",
-        "company": "EBCONT group GmbH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-net-entwickler-118619699",
-        "position": ".Net Entwickler",
-        "company": "apsa personnel concepts gmbh"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-net-core-developer-118215846",
-        "position": "C#/.NET Core Developer",
-        "company": "Programmierfabrik GmbH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-net-developer-117527568",
-        "position": ".net Developer IT",
-        "company": "\u00d6sterreichische Post AG"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-net-sw-entwickler-117239256",
-        "position": "C#/ .NET SW-Entwickler",
-        "company": "TECHSEARCH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-net-bzw-angular-developer-home-office-moeglichkeit-117011842",
-        "position": "C# .NET bzw. ANGULAR Developer - HOME-OFFICE-M\u00f6glichkeit",
-        "company": "JOB WORLD GmbH"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-softwareentwickler-net-116834348",
-        "position": "Softwareentwickler - C#/.NET",
-        "company": "efinio AG"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-softwareentwickler-net-toolentwicklung-116834195",
-        "position": "Softwareentwickler C#, .NET-Toolentwicklung",
-        "company": "efinio AG"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-mes-softwareentwickler-mssql-net-116808932",
-        "position": "MES Softwareentwickler  - (C#, MSSQL, .NET)",
-        "company": "RIB Software AG"
-    },
-    {
         "URL": "https://www.xing.com//jobs/wien-net-developer-115694743",
         "position": ".NET Developer",
         "company": "TechTalk GmbH"
@@ -111,7 +16,7 @@
     },
     {
         "URL": "https://www.xing.com//jobs/wien-senior-net-entwickler-logistiksysteme-114125403",
-        "position": "Senior C#.NET Entwickler  f\u00fcr Logistiksysteme",
+        "position": "Senior C#.NET Entwickler f\u00fcr Logistiksysteme",
         "company": "KA Resources"
     },
     {
@@ -121,23 +26,18 @@
     },
     {
         "URL": "https://www.xing.com//jobs/wien-senior-software-developer-for-mission-critical-systems-30h-123472359",
-        "position": "Senior Software Developer for Mission Critical Systems  ab 30h",
+        "position": "Senior Software Developer",
         "company": "CANCOM Austria AG"
     },
     {
         "URL": "https://www.xing.com//jobs/wien-digital-sales-development-associate-vienna-123520656",
-        "position": "Digital Sales Development Associate  Vienna",
+        "position": "Digital Sales Development Associate",
         "company": "SAP"
     },
     {
         "URL": "https://www.xing.com//jobs/wien-digital-sales-development-associate-vienna-123521437",
-        "position": "Digital Sales Development Associate  Vienna",
+        "position": "Digital Sales Development Associate",
         "company": "RUAG"
-    },
-    {
-        "URL": "https://www.xing.com//jobs/wien-honorartainer-informationstechnologie-123511381",
-        "position": "Honorartainer Informationstechnologie",
-        "company": "BBRZ Reha GmbH"
     },
     {
         "URL": "https://www.xing.com//jobs/wien-full-stack-developer-angular-123533780",

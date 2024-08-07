@@ -20,6 +20,7 @@ def get_absolute_path(file_name):
 # Define the PDF generator function
 def create_application_files(application):
     base_directory = get_absolute_path("Bewerbungsunterlagen")
+    
     company_name = sanitize_directory_name(application['company'].replace(' ', '_'))
     position_name = sanitize_directory_name(application['position'].replace(' ', '_'))
     directory_name = f"{company_name}_{position_name}"

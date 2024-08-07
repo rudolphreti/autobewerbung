@@ -7,12 +7,15 @@ from views import index, delete_application, update_field, main_bp
 from data_manager import load_data, clear_data
 from create_application_files import create_application_files
 from folder_manager import delete_folder_contents
+from unterlagen_update import regenerate_bp  # Importiere den neuen Blueprint
+
 
 
 app = Flask(__name__)
 app.secret_key = 'secret'
 csrf = CSRFProtect(app)  # CSRF-Schutz aktivieren
 app.register_blueprint(main_bp)
+app.register_blueprint(regenerate_bp)  # Registriere den neuen Blueprint
 
 
 app.add_url_rule('/', view_func=index, methods=['GET', 'POST'])
@@ -41,4 +44,4 @@ if __name__ == '__main__':
         create_application_files(application)
     
     webbrowser.open("http://127.0.0.1:5000/")
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=False)
