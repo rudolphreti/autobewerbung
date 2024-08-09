@@ -1,16 +1,23 @@
 import os
 import shutil
 import sys
-from datetime import datetime
+import datetime
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.lib.enums import TA_JUSTIFY, TA_RIGHT, TA_CENTER
 from reportlab.lib.units import cm
+from datetime import datetime
 
 def sanitize_directory_name(name):
-    # Zamień nieprawidłowe znaki na znaki podkreślenia lub inne bezpieczne znaki
-    return name.replace('/', '_').replace('|', '_').replace(':', '_').replace('?', '_').replace('<', '_').replace('>', '_').replace('*', '_').replace('\\', '_')
+    # Replace invalid characters with underscores or other safe characters
+    invalid_chars = ['/', '|', ':', '?', '<', '>', '*', '\\', '\n']
+    for char in invalid_chars:
+        name = name.replace(char, '_')
+    if len(name) > 100:
+        name = name[:100]  # Truncate the name if it exceeds 100 characters
+    return name
+
 
 def get_absolute_path(file_name):
     # Get the absolute path of the current directory (support for PyInstaller)
@@ -72,7 +79,7 @@ def create_application_files(application):
         f"mit großer Begeisterung bewerbe ich mich {text}"
         "Ich habe gerade eine zweijährige Ausbildung im Bereich der Anwendungsentwicklung mit LAP abgeschlossen, wo ich solide Grundlagen in der objektorientierten Programmierung mit .NET/C# erlernte. Darüber hinaus bin ich in der Lage, Webanwendungen in ASP.NET mit REST API zu entwickeln, wobei ich SQL-Datenbanken effektiv nutze.<br/><br/>"
         
-        "Von 2020 bis 2023 war ich Mitbegründer des Start-ups " '<a href="https://timagio.com" color="blue"><u>timagio.com</u></a>, '"das Apps für Eltern und Lehrer im Zusammenhang mit der Montessori-Pädagogik entwickelt. Dort habe ich mehrere Prototypen in JavaScript, Automatisierungen in Python und Powershell-Skripte entwickelt sowie Erfahrung mit Azure DevOps und Git gesammelt.<br/><br/>"
+        "Von 2020 bis 2023 war ich Mitbegründer des Start-ups " '<a href="https://timagio.com" color="blue"><u>timagio.com</u></a>, '"das Apps für Eltern und Lehrer im Zusammenhang mit der Montessori-Pädagogik entwickelt. Dort habe ich mehrere Prototypen in JavaScript, Automatisierungen in Python und Powershell-Skripte entwickelt sowie Erfahrung mit Scrum, Azure DevOps und Git gesammelt.<br/><br/>"
         
         "Ich lerne schnell, habe einen analytischen Verstand, bin kreativ, offen für Kritik und resistent gegen Stress. Ich bin daher überzeugt, dass ich ein wertvolles Mitglied Ihres Teams sein kann. Ich freue mich darauf, in einem persönlichen Gespräch mehr über diese Position zu erfahren.<br/><br/>"
         
