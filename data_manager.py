@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 
 def get_data_file_path():
     # Get the absolute path of the current directory
@@ -23,3 +24,4 @@ def clear_data():
     # Open the data file in write mode and empty its contents to an empty list
     with open(data_file_path, 'w') as file:
         json.dump([], file, indent=4)
+

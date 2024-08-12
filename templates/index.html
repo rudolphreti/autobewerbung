@@ -69,14 +69,14 @@
                 Company <i class="fas fa-sort"></i>
               </th>
               <th
-                class="col-6"
+                class="col-7"
                 id="positionHeader"
                 onclick="sortTable('position')"
                 style="cursor: pointer"
               >
                 Position <i class="fas fa-sort"></i>
               </th>
-              <th class="col-3">Actions</th>
+              <th class="col-2">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -115,15 +115,7 @@
                   onclick="copyMessage('{{ application.URL}}')"
                 >
                   Message
-                </button>
-                <!-- button Folder to call a function goToFolder to go to Bewerbungsunterlagen in hard drive folder() -->
-                <button
-                  type="button"
-                  class="btn btn-info btn-sm"
-                  onclick="goToFolder('{{ folderPath}}')"
-                >
-                  Folder
-                </button>
+                </button>               
                 <form
                   method="POST"
                   action="{{ url_for('delete_application', index=loop.index0) }}"
@@ -150,11 +142,6 @@
       function copyMessage(url) {
         const message = `Sehr geehrte Damen und Herren,\n\nals Antwort auf die Anzeige ${url} sende ich Ihnen meine Bewerbungsunterlagen.\n\nMit freundlichen Grüßen,\nMikołaj Kosmalski`;
         navigator.clipboard.writeText(message);
-      }
-
-      //go to folder TODO
-      function goToFolder(folderPath) {
-        window.location.href = folderPath;
       }
     </script>
   </body>

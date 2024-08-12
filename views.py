@@ -20,7 +20,7 @@ def index():
         }
         job_applications.append(new_application)
         save_data(job_applications)
-        create_application_files(new_application)  # Call the function here
+        create_application_files(new_application) 
         return redirect(url_for('index'))
     df = pd.DataFrame(job_applications)
     table_html = df.to_html(classes='table table-striped', index=False)
