@@ -3,6 +3,8 @@
 
 AutoCV is a Flask-based web application designed to manage job applications efficiently. The application allows users to add, display, and delete job applications, as well as generate related documents such as CVs and cover letters.
 
+![screenshot](assets/images/screen.png)
+
 ## Features
 
 - **Job Application Management**: Add, view, and delete job applications through a web interface.
@@ -60,17 +62,15 @@ AutoCV is a Flask-based web application designed to manage job applications effi
 
 ## Usage
 
-- **Adding a Job Application**: Use the form on the main page to input details of a job application.
+- **Adding a Job Application**: You can add application data manually, but it's better to use a web scraper to make the whole process more efficient. 
 - **Viewing Applications**: The list of saved applications is displayed in a table with sorting and searching features.
-- **Generating Documents**: Every time the application is run, it generates new application documents based on the data in `data.json`. You can also update existing documents by triggering the "Update application documents" feature.
+- **Generating Documents**: Every time the application is run, it generates new application documents based on the data in `data.json` (position, company) and `settings.json` (user data). You can also update existing documents by triggering the "Update application documents" feature.
+
+![screenshot](assets/images/screen2.png)
 
 ## Disclaimer
 
-This project is a prototype and will not be further developed using Python. It is intended to exist temporarily until it is replaced by a .NET-based application.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request.
+NOTICE! This project is a prototype and will not be further developed using Python. It is intended to exist temporarily until it is replaced by a .NET-based application.
 
 ## License
 
