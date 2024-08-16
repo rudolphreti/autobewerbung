@@ -68,9 +68,8 @@ AutoCV is a Flask-based web application designed to manage job applications effi
 
 ![screenshot](assets/images/screen2.png)
 
-## Disclaimer
-
-NOTICE! This project is a prototype and will not be further developed using Python. It is intended to exist temporarily until it is replaced by a .NET-based application.
+## TODO
+* migration to .NET (what exact framework is not yet determined, it will probably be MAUI).
 
 ## License
 

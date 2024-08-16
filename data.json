@@ -1,52 +1,17 @@
 [
     {
-        "URL": "http://example.com/job1",
-        "company": "Company1",
-        "position": "Position1"
+        "position": "Junior Backend Engineer",
+        "company": "Upstream",
+        "URL": "https://jobs.wienerstadtwerke.at/de/jobs/13278/junior-backend-engineer-wm-d-upstream-academy"
     },
     {
-        "URL": "http://example.com/job2",
-        "company": "Company2",
-        "position": "Position2"
+        "position": "Junior Credit Risk Modeller",
+        "company": "BAWAG Group",
+        "URL": "https://www.karriere.at/jobs/7272238"
     },
     {
-        "URL": "http://example.com/job3",
-        "company": "Company3",
-        "position": "Position3"
-    },
-    {
-        "URL": "http://example.com/job4",
-        "company": "Company4",
-        "position": "Position4"
-    },
-    {
-        "URL": "http://example.com/job5",
-        "company": "Company5",
-        "position": "Position5"
-    },
-    {
-        "URL": "http://example.com/job6",
-        "company": "Company6",
-        "position": "Position6"
-    },
-    {
-        "URL": "http://example.com/job7",
-        "company": "Company7",
-        "position": "Position7"
-    },
-    {
-        "URL": "http://example.com/job8",
-        "company": "Company8",
-        "position": "Position8"
-    },
-    {
-        "URL": "http://example.com/job9",
-        "company": "Company9",
-        "position": "Position9"
-    },
-    {
-        "URL": "http://example.com/job10",
-        "company": "Company10",
-        "position": "Position10"
+        "position": "Softwareentwickler C#",
+        "company": "FERCHAU Austria GmbH",
+        "URL": "https://www.karriere.at/jobs/7066600"
     }
 ]
